@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #071b45, #101010);
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 45px 15px;
+    background: linear-gradient(120deg, #c90020, #071b70);
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+header h2 {
+    font-size: 55px;
+    color: #ffe600;
+    text-shadow: 3px 3px 5px black;
+}
+
+header p {
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.principal {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 30px;
+    background: #17233b;
+    border: 3px solid #e60023;
+    border-radius: 25px;
+    box-shadow: 0 0 25px #e60023;
+}
+
+.portada {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #e60023;
+    margin-bottom: 25px;
+}
+
+.principal h2 {
+    color: #ffe600;
+    margin: 20px 0;
+}
+
+.principal p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.frase {
+    color: #ff304f !important;
+}
+
+button {
+    background: #e60023;
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0754c7;
+    transform: scale(1.08);
+}
+
+#mensaje {
+    color: #ffe600;
+    margin-top: 25px;
+}
+
+.titulo-galeria {
+    color: #ffe600;
+    margin: 40px 0 25px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #e60023;
+    box-shadow: 0 0 15px #0754c7;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.08);
+}
+
+footer {
+    background: #c90020;
+    padding: 25px;
+    margin-top: 40px;
+    line-height: 2;
+}
+
+.telarana {
+    font-size: 45px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    header h2 {
+        font-size: 40px;
+    }
+
+    .principal {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .galeria img {
+        width: 90%;
+    }
+}
